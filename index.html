@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background: pink;
+        
+  overflow-y: hidden; 
+  overflow-x: hidden; 
+    }
+h1{position: absolute;
+width: 439px;
+height: 226px;
+left: 119px;
+top: 250px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 96px;
+line-height: 112px;
+
+color: #FFFFFF;
+}
+
+h4{
+    position: absolute;
+width: 52px;
+height: 42px;
+left: 119px;
+top: 200px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+}
+
+.button{
+    
+margin-top: 400px;
+position: absolute;
+width: 349px;
+height: 90px;
+left: 123px;
+top: 550px;
+margin-right:500px;
+background: #FFFFFF;
+border-radius: 45px;
+
+}
+
+h3{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 42px;
+padding-left:45%;
+color: #000000;
+}
+
+.btn {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 1.4rem;
+	color: var(--inv);
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: var(--def);
+	transition-delay: .5s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: var(--inv);
+	transition-delay: .35s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid var(--inv);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	--def: #96B7C4; 	
+	--inv: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
+}
+
+html {
+	font-size: 12px;
+	font-family: 'Playfair Display', serif;
+}
+
+div {margin-bottom: 3rem;}
+div:last-child {margin-bottom: 0;}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.poster{
+    position: absolute;
+width: 846px;
+height: 1136px;
+left: 779px;
+top: -112px;
+background-repeat: no-repeat;
+background: url(https://images.unsplash.com/photo-1574087776137-305a55298646?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80);
+z-index: -3;
+opacity: 0.2;
+}
+.overlay{
+    position: absolute;
+width: 846px;
+height: 1136px;
+left: 779px;
+top: -112px;
+background-color: white;
+opacity: 0.5;
+z-index:-3;
+}
+</style>
+</head>
+<body>
+    <h4></h4>
+    <h1>Lorem Ipsum Solutions</h1>
+    <div class="btn from-top"><a class="link" href="landing.html">Enter Site</a></div>
+    <div class="overlay"></div>
+  <div class="poster"></div>
+</body>
+</html>
